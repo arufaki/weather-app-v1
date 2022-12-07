@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section id="weather-app">
+        <div class="mx-auto px-5">
+          <div class="flex justify-center items-center h-screen">
+            <div class="bg-white/70 w-[100%] rounded-[55px] max-w-[600px] min-w-[320px] shadow-4xl">
+              <div class="mx-auto px-9 py-9">
+                <form action="#" class="bg-[#585858]/30 flex flex-row rounded-3xl">
+                  <input
+                    id="input-city"
+                    type="text"
+                    placeholder="Search.."
+                    value=""
+                    class="w-full py-[14px] pl-6 bg-transparent outline-none placeholder:font-popins placeholder:font-normal placeholder:text-black/40 text-white font-popins font-normal"
+                  />
+                  <button id="btn-search" class="overflow-hidden bg-black/40 rounded-full my-2 mr-[10px] bg-search-icon bg-cover bg-center text-transparent">search</button>
+                </form>
+                <div id="result">
+                  <div class="mt-10">
+                    <h1 class="font-popins font-semibold text-black/75 text-2xl mb-5 vs:text-[40px]">Weather in <span class="city"></span>, <span class="country"></span></h1>
+                    <h2 class="font-popins font-extrabold text-black/75 text-[40px] vs:text-[50px]"><span class="temp"></span>°C</h2>
+                  </div>
+                  <div class="space-y-1">
+                    <div class="flex flex-row my-2 items-center">
+                      <img class="icon w-[70px]" />
+                      <span class="weather-info weatherInfo"></span>
+                    </div>
+                    <p class="weather-info">Humidity: <span class="humadity"> </span>%</p>
+                    <p class="weather-info">Wind Speed: <span class="wind-speed"> </span> km/hr</p>
+                  </div>
+                </div>
+                <div class="flex justify-center space-x-5 mt-10">
+                  <a href="#" class="outline rounded-full border-black/75 px-[18px] py-[10px] hover:bg-white/75 transition-all"><img src="public/assets/svg/facebook.svg" alt="facebook" class="w-[15px]" /></a>
+                  <a href="#" class="outline rounded-full border-black/75 px-[14px] py-[10px] hover:bg-white/75 transition-all"><img src="public/assets/svg/linkedin.svg" alt="linkedin" class="w-[25px]" /></a>
+                  <a href="#" class="outline rounded-full border-black/75 px-[14px] py-[10px] hover:bg-white/75 transition-all"><img src="public/assets/svg/instagram.svg" alt="instagram" class="w-[25px]" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="public/js/app.js"></script>
+  </body>
+</html>

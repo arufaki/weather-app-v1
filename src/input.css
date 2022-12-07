@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .weather-info {
+    @apply font-popins font-normal text-black/75 text-base;
+  }
+}
